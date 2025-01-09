@@ -47,6 +47,7 @@ class _ExpandableListScreenState extends State<ExpandableListScreen> {
                       child: Center(child: CircleAvatar(radius: 4,backgroundColor: Colors.teal.shade300,)),
                     ),
                     buildMealCategoriesList(data, provider),
+                    SizedBox(height: 150,),
                   ],
                 ),
               ),

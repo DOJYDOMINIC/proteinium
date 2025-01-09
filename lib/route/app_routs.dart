@@ -3,29 +3,25 @@ import 'package:flutter/material.dart';
 import '../screens/home_page.dart';
 
 class AppRoutes {
-  static const String onboarding = '/';
+  static const String homePage = '/';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     WidgetBuilder builder;
     switch (settings.name) {
       // Login Page
-      case onboarding:
+      case homePage:
         builder = (context) => HomePage();
         break;
-
-      // Default (Error Page)
       default:
         builder =
-            (context) => const ErrorPage(); // Fallback for unhandled routes
+            (context) => const ErrorPage();
     }
-
     return MaterialPageRoute(
       builder: (context) => builder(context),
     );
   }
 }
 
-// Error Page Widget
 class ErrorPage extends StatelessWidget {
   const ErrorPage({super.key});
 

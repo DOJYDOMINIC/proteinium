@@ -28,7 +28,7 @@ class _ProteiniumState extends State<Proteinium> {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            initialRoute: AppRoutes.onboarding, // Define the initial route
+            initialRoute: AppRoutes.homePage, // Define the initial route
             onGenerateRoute: AppRoutes.generateRoute, // Set the route generator
             theme: ThemeData(
               primarySwatch: Colors.blue,
